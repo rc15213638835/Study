@@ -21,7 +21,7 @@
 4、抽象类中的方法要被使用，必须由子类复写其所有的抽象方法后，建立子类对象调用。
    如果子类只覆盖了部分抽象方法，那么该子类还是一个抽象类。
  */
-abstract class Employee{//抽象方法一定定义在抽象类中。    
+abstract class Employee{//抽象方法一定定义在抽象类中。
     private String name;
     private String id;
     private double pay;
