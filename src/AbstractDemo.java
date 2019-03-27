@@ -30,13 +30,14 @@
 
 
  */
-abstract class Student{
+/*abstract class Student{
     abstract void study();
     void sleep(){
         System.out.println("躺着");
     }
-}
+}*/
 
+/*
 class ChongCiStudent extends Student{
     void study(){//抽象还可以强制子类重写。如果不重写就会报错。
         System.out.println("chongci study");
@@ -59,3 +60,4 @@ public class AbstractDemo {
         new BaseStudent().study();
     }
 }
+*/
