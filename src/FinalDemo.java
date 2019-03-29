@@ -18,10 +18,10 @@ final:最终。作为一个修饰符。
 
  */
 
-class Demo {
+/*class Demo {
     final void show1(){}//可以只定义该功能不能被复写
     void show2(){}
-}
+}*/
 /*class SubDemo extends Demo{//不能继承，使用了final修饰的类
 
 }*/
