@@ -23,25 +23,25 @@ interface 用于定义接口。
 
 接口可以被类多实现，也是对多继承不支持的转换形式。java支持多实现。接口可以实现多继承
  */
-interface Inter{
+/*interface Inter{
     public static final int NUM = 3;//final、public、static、abstract没写没关系，只要是interface都会自动加上
     public abstract void show();//void 不能省略，写的时候最好写全，好看懂代码。
-}
+}*/
 
 interface InterA{
 //    public abstract void method();
     public abstract void show();
 }
 
-class Test extends DemoA implements Inter,InterA{
+/*class Test extends DemoA implements Inter,InterA{
     public void show(){}
 //    public void method(){}
-}
+}*/
 
 class DemoA{
     public void function(){}
 }
-public class InterfaceDemo {
+/*public class InterfaceDemo {
     public static void main(String[] args) {
         Test t = new Test();
         System.out.println(t.NUM);//对象调用
@@ -49,6 +49,6 @@ public class InterfaceDemo {
         System.out.println(Inter.NUM);//也可以
         //这三者任意一个都不能对NUM进行赋值，因为NUM是一个常量。
     }
-}
+}*/
 
 
