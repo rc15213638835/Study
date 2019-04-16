@@ -21,6 +21,14 @@ import packa.DemoA;
 同一个包中       OK          OK              OK
 子类            OK          OK
 不同包中         OK
+
+为了简化类的书写，使用一个关键字，import.
+建议，不要写通配符*，需要用到包中哪个类，就导入哪个类。
+
+建立定报名不要重复，可以是使用url来完成定义，url是唯一的。
+www.itcast.cn
+package cn.itcast.demo
+package cn.itcast.test
  */
 public class PackageDemo {
     public static void main(String[] args) {
