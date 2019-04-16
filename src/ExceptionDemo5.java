@@ -31,26 +31,64 @@ class FushuException extends RuntimeException{
         super(msg);
     }
 }
-class Demo{
-    int div(int a,int b)//throws ArithmeticException
-    {
+/*class Demo{
+    int div(int a,int b)throws FushuException{
         if (b<0)
             throw new FushuException("出现了除数为负数了");
-        if (b==0)
-            throw new ArithmeticException("被零除啦");//函数内抛，函数外要标识。
+//        if (b==0)
+//            throw new ArithmeticException("被零除啦");//函数内抛，函数外要标识。
         return a/b;
     }
-}
-public class ExceptionDemo5 {
+}*/
+/*public class ExceptionDemo5 {
     public static void main(String[] args) {
         Demo d = new Demo();
-
-        int x = d.div(4,2);
-        System.out.println("x="+x);
-
+//
+//        int x = d.div(4,2);
+//        System.out.println("x="+x);
+//
+//        System.out.println("over");
+        try {
+            int x =d.div(4,-1);
+            System.out.println("x="+x);
+        } catch (FushuException e) {
+            System.out.println(e.toString());
+            return;//结束该主函数，over就不会执行了。finall一定会执行
+        }
+        finally {
+            System.out.println("finally");//finally中存放的是一定会被执行的代码
+        }
         System.out.println("over");
+
     }
-}
+}*/
+
+
+/*
+    finally代码块：定义一定执行的代码。
+    通常用于关闭资源。（非常重要，不关闭容易造成资源浪费。）
+
+
+ */
+/*public void method()throws NoException {
+    连接数据库;
+
+    数据库操作;//throw new SQLException();
+
+    关闭数据库;//该动作，无论数据操作是否成功，一定要关闭资源。
+    try {
+        连接数据库;
+
+        数据操作;//throw new SQLException()；
+    }
+    catch (SQLException e){
+        会对数据库进行异常处理;
+        throw new NoException();
+    }
+    finally {
+        关闭数据库;
+    }
+}*/
 
 
 
