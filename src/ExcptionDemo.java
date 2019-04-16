@@ -59,7 +59,7 @@ finally{
         return a/b;
     }
 }*/
-public class ExcptionDemo {
+/*public class ExcptionDemo {
     public static void main(String[] args){
         Demo d = new Demo();
         try {
@@ -69,17 +69,17 @@ public class ExcptionDemo {
         catch (Exception e){
             System.out.println("haha："+e.toString());
         }
-        /*catch (ArithmeticException e) {
+        *//*catch (ArithmeticException e) {
             System.out.println(e.toString());
             System.out.println("被零除了");
         }
         catch (ArrayIndexOutOfBoundsException e){
             System.out.println(e.toString());
             System.out.println("角标越界啦");
-        }*/
+        }*//*
 
 
-        /*try {
+        *//*try {
            int x = d.div(4,1);
            System.out.println("x="+x);
         } catch (Exception e) {//Exception e = new ArithmeticException();
@@ -89,10 +89,10 @@ public class ExcptionDemo {
             e.printStackTrace();//异常名称、异常信息、异常出现的位置
                                 //其实JVM默认的异常处理了机制，就是在调用printStackTrace方法。
                                 //打印异常的堆栈的跟踪信息。
-        }*/
+        }*//*
 
         System.out.println("over");
 
 
     }
-}
+}*/

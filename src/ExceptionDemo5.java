@@ -54,6 +54,7 @@ class FushuException extends RuntimeException{
         } catch (FushuException e) {
             System.out.println(e.toString());
             return;//结束该主函数，over就不会执行了。finall一定会执行
+            System.exit(0);//系统，推出。JVM结束。
         }
         finally {
             System.out.println("finally");//finally中存放的是一定会被执行的代码
