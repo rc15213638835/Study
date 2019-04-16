@@ -7,7 +7,9 @@
 package pack;
 
 import packa.DemoA;
-
+/*
+总结
+ */
 public class PackageDemo {
     public static void main(String[] args) {
         DemoA d = new DemoA();
