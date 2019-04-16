@@ -1,7 +1,7 @@
 /**
  * @program: Study
- * @Date: 2019/3/27 15:01
- * @Author: Mr.Ran
+ * @Date: 2019/3/27 15:01Ran
+ * @Author: Mr.
  * @Description:
  */
 /*
@@ -41,7 +41,6 @@ class AdvStudent extends Student{
         System.out.println("adv study");
     }
 }
-
 
 public class DuoTaiDemo3 {
     public static void main(String[] args) {

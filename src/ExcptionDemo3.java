@@ -48,14 +48,14 @@ throws后面跟的异常类。可以跟多个。用逗号隔开。
 throw后跟的是异常对象。
  */
 
-class FuShuException extends Exception{
+/*class FuShuException extends Exception{
     private int value;
-    /*FuShuException(){
+    *//*FuShuException(){
         super();
     }
     FuShuException(String msg){
         super(msg);
-    }*/
+    }*//*
     FuShuException(String msg,int value){
         super(msg);
         this.value = value;
@@ -64,17 +64,17 @@ class FuShuException extends Exception{
         return value;
     }
 
-}
-class Demo{
+}*/
+/*class Demo{
     int div(int a,int b)throws FuShuException{//在功能上通过throws的关键字声明了该功能有可能会出现问题
         if (b<0)
             throw new FuShuException("出现了除数是负数的情况 /by fushu",b);//手动通过throw关键字抛出一个自定义对象
 
         return a/b;
     }
-}
+}*/
 public class ExcptionDemo3 {
-    public static void main(String[] args) {
+  /*  public static void main(String[] args) {
         Demo d = new Demo();
 
         try {
@@ -87,7 +87,7 @@ public class ExcptionDemo3 {
         }
 
         System.out.println("over");
-    }
+    }*/
 }
 
 /*
